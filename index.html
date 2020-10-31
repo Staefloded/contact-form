@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="contact-form">
+      <div class="container">
+        <h2 class="text-xl my-2">Create An Account</h2>
+        <hr class="my-5 line" />
+        <form>
+          <div class="form-control">
+            <label for="First Name">First Name</label>
+            <input type="text" name="fname" placeholder="First Name" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="Last Name">Last Name</label>
+            <input type="text" name="lname" placeholder="Last Name" />
+            <small>Error Message</small>
+          </div>
+
+          <div class="form-control">
+            <label for="Email">Email</label>
+            <input type="name" name="email" placeholder="Email Address" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="Password">Password</label>
+            <input type="password" name="password" placeholder="Password" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="Confirm Password">Confirm Password</label>
+            <input type="password" name="password2" placeholder="Confirm Password" />
+            <small>Error Message</small>
+          </div>
+          <div class="terms">
+            <input type="checkbox" name="check" />
+            <p>
+              I accept the <span class="blue">Terms of Use </span> &
+              <span class="blue"> Privacy Policy</span>
+            </p>
+          </div>
+          <button class="button" type="submit">Create Account</button>
+
+          <div class="loader"></div>
+        </form>
+
+        <p class="login py-2">Already Have An Account? <a href="login.html">Login </a></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
